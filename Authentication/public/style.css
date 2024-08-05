@@ -47,9 +47,20 @@ body{
     padding: 10px 16px;
     letter-spacing: 2px;
   }
+  #signup{
+    font-size: 2rem;
+  }
+  #login{
+    font-size: 2rem;
+    background-color: #E6D9B4;
+    color: #eca945;
+    position: absolute;
+    right: 150px;
+  }
   .btn{
     border-radius: 36px;
     background: #eca945;
+    font-weight: bold;
   }
   form h2{
     font-size: 2.4em;
