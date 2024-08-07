@@ -31,21 +31,21 @@ app.get('/list',(req, res)=>res.render('list'))
 app.use(authRoutes);
 
 
-//cookies
-app.get('/set-cookies',(req, res)=>{
+// //cookies
+// app.get('/set-cookies',(req, res)=>{
 
-    res.cookie('nigga', true)
-    res.cookie('isCustomer', true, { maxAge: 1000*60*60*24, httpOnly:true })
+//     res.cookie('nigga', true)
+//     res.cookie('isCustomer', true, { maxAge: 1000*60*60*24, httpOnly:true })
 
-    res.send('u got cookies!')
+//     res.send('u got cookies!')
 
-})
+// })
 
-app.get('/read-cookies',(req, res)=>{
-    const cookies = req.cookies;
-    console.log(cookies.nigga)
+// app.get('/read-cookies',(req, res)=>{
+//     const cookies = req.cookies;
+//     console.log(cookies.nigga)
 
-    res.json(cookies);
+//     res.json(cookies);
 
 
-})
+// })
