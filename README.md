@@ -1,3 +1,3 @@
 A user authentication project (still not complete)
 
-* tools used: NodeJS, Express, MongoDB, JWT
+* tools used: EJS, NodeJS, Express, MongoDB, JWT
