@@ -17,7 +17,7 @@ const handleErrors = (err) =>{
     }
     //incorrect password
     if(err.message === 'incorrect password'){
-        errors.email = "this password doesn't match with the email!"
+        errors.password = "this password doesn't match with the email!"
     }    
     if(err.message.includes('user validation failed')){
         Object.values(err.errors).forEach(({ properties }) => {
@@ -30,7 +30,7 @@ const handleErrors = (err) =>{
 }
 const maxAge = 3 * 24 * 60 * 60
 const createToken = (id) => {
-    return jwt.sign({ id }, 'niggers secret', {
+    return jwt.sign({ id }, 'so secret', {
         expiresIn: maxAge
     })
 }
@@ -71,4 +71,9 @@ module.exports.login_post = async (req, res)=>{
         const errors = handleErrors(err);
         res.status(400).json({ errors });
     }
+}
+
+module.exports.logout_get = (req, res)=>{
+    res.cookie('jwt', '', { maxAge:1 })
+    res.redirect('/')
 }

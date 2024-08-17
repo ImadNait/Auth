@@ -14,12 +14,13 @@ body{
     letter-spacing: 1px;
     background: #E6D9B4;
   }
-  h1, h2, h3, h4, ul, li, a, p, input, label, button, div, footer{
+  h1, h2, h3, h4, ul, a, p, input, label, button, div, footer{
     margin: 0;
     padding: 0;
     font-family: "Neucha", cursive;
     color: #444;
   }
+
   ul{
     list-style-type: none;
   }
@@ -37,7 +38,11 @@ body{
     align-items: center;
   }
   nav li{
-    margin-left: 20px;
+    margin-left: 50px;
+  }
+  nav p{
+    position: absolute;
+    right: 300px;
   }
   nav li a{
     text-transform: uppercase;
@@ -47,15 +52,30 @@ body{
     padding: 10px 16px;
     letter-spacing: 2px;
   }
-  #signup{
+  #login{
     font-size: 2rem;
   }
-  #login{
+  #signup{
     font-size: 2rem;
     background-color: #E6D9B4;
     color: #eca945;
     position: absolute;
     right: 150px;
+  }
+  #logout{
+    font-size: 2rem;
+    background-color: #E6D9B4;
+    color: red;
+    position: absolute;
+    right: 90px;
+    top: 15px;
+
+
+  }  
+  #welcoma{
+    position: absolute;
+    right: 200px;
+    top: 25px;
   }
   .btn{
     border-radius: 36px;
